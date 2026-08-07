@@ -1,10 +1,13 @@
-const math=require("./math.js");
-
-console.log(math.add(5,10));
-console.log(math.subtract(10,5));
+console.log("hello Portugal ");
 
 
-// console.log(add(5,10));
+// const math=require("./math.js");
+
+// console.log(math.add(5,10));
+// console.log(math.subtract(10,5));
 
 
-console.log("hello world");
+// // console.log(add(5,10));
+
+
+// console.log("hello world");
