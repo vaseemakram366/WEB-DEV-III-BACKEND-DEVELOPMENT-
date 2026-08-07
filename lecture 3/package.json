@@ -1,11 +1,11 @@
 {
   "name": "lecture-3",
   "version": "1.0.0",
-  "description": "",
+  "description": "lecture 3 web dev III",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node script.js"
+    "cr7": "node script.js"
   },
   "keywords": [],
   "author": "",
