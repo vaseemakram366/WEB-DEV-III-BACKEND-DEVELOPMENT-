@@ -1,4 +1,4 @@
-console.log("hello Portugal ");
+// console.log("hello Portugal ");
 
 
 // const math=require("./math.js");
@@ -7,7 +7,7 @@ console.log("hello Portugal ");
 // console.log(math.subtract(10,5));
 
 
-// // console.log(add(5,10));
+// console.log(add(5,10));
 
 
-// console.log("hello world");
+console.log("hello world");
