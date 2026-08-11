@@ -1,10 +1,10 @@
-// function add(a, b) {
-//     return a + b;
-// }
+function add(a, b) {
+    return a + b;
+}
 
-// function subtract(a, b) {
-//     return a - b;
-// }
+function subtract(a, b) {
+    return a - b;
+}
 
 // // Named exports object
 // const exported = { add, subtract };
@@ -19,3 +19,5 @@
 //         module.exports = exported;
 //     }
 // }
+
+export { add , subtract };
