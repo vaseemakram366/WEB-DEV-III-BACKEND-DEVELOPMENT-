@@ -6,3 +6,10 @@ console.log(os.cpus().length);
 console.log(os.homedir());
 console.log(os.totalmem()/(1024*1024*1024) + " GB");
 console.log(os.freemem()/(1024*1024) + " MB");
+
+// win32
+// x64
+// 12
+// C:\Users\HP
+// 15.637882232666016 GB
+// 4662.328125 MB
