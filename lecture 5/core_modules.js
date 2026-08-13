@@ -91,15 +91,15 @@ dns.lookup("www.google.com",(err,address,family)=>{
     }
 })
 
-dns.reverse("8.8.8.8",(err,hostname)=>{
-    if(err){
-        console.log(err);
+// dns.reverse("8.8.8.8",(err,hostname)=>{
+//     if(err){
+//         console.log(err);
         
-    }else{
-        console.log(hostname);
+//     }else{
+//         console.log(hostname);
         
-    }
-})
+//     }
+// })
 
 
 
