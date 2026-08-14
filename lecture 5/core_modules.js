@@ -3,6 +3,7 @@ const path = require('path')
 const fs = require("fs")
 const crypto = require("crypto")
 const dns = require("dns")
+const process = require("process")
 
 // console.log(os.platform());
 // console.log(os.arch());
@@ -100,6 +101,13 @@ const dns = require("dns")
         
 //     }
 // })
+
+// const data = process.argv;
+// console.log(Number(data[2])+Number(data[3]));
+
+
+console.log(process.version);
+console.log(process.cwd());
 
 
 
