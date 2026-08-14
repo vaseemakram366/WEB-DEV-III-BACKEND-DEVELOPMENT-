@@ -79,17 +79,17 @@ const dns = require("dns")
 // const hash = crypto.createHmac("sha256",salt).update(password).digest("hex");// uses in compay
 // console.log(hash);
 
-dns.lookup("www.google.com",(err,address,family)=>{
-    if(err){
-        console.log(err);
+// dns.lookup("www.google.com",(err,address,family)=>{
+//     if(err){
+//         console.log(err);
         
-    }else{
-        console.log(address);
-        console.log(family);
+//     }else{
+//         console.log(address);
+//         console.log(family);
         
         
-    }
-})
+//     }
+// })
 
 // dns.reverse("8.8.8.8",(err,hostname)=>{
 //     if(err){
@@ -100,6 +100,8 @@ dns.lookup("www.google.com",(err,address,family)=>{
         
 //     }
 // })
+
+
 
 
 
