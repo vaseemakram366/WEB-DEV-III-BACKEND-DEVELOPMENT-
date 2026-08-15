@@ -19,7 +19,7 @@ const server = http.createServer((req, res) => {
         res.write("<h1>Welcome to home page</h1>");
         res.end();
     } else if (req.url == "/about" && req.method == "GET") {
-        res.writeHead(200, { "Content-Type": "text?html" });
+        res.writeHead(200, { "Content-Type": "text/html" });
         res.write("<h1>Welcome to about page</h1>");
         res.end();
     } else if (req.url == "/contact" && req.method == "GET") {
@@ -28,7 +28,7 @@ const server = http.createServer((req, res) => {
         res.end();
 
     } else if (req.url == "/users" && req.method == "GET") {
-        res.writeHead(200, { "content-Type": "application/login" });
+        res.writeHead(200, { "content-Type": "application/json" });
         res.write(JSON.stringify(users));
         res.end();
     }
@@ -37,11 +37,6 @@ const server = http.createServer((req, res) => {
         res.write("<h1>404 page not found</h1>")
         res.end();
     }
-
-
-
-
-    res.end("hello from http")
 
 })
 
