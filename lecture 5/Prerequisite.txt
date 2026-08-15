@@ -1,0 +1,23 @@
+1 Computer
+   │
+   ├── Operating System
+   │      └── Windows / Linux / macOS
+   │
+   ├── VS Code
+   │
+   ├── Node.js
+   │      └── npm
+   │
+   └── Git (optional, but GitHub ke liye required)
+
+ 2. Internet
+
+   
+ 3.   Run in terminal = node --version    (v24.16.0)
+
+ 4.   Run in terminal = npm --version     (11.x.x)
+
+ 5.   for git hub user = git --version    (git version 2.x.x)
+
+ 6. Ek folder banao use vs code mai open kar lo and fir isi folder mai .js file banao and ek file.txt create karo isi      folder mai aur file.txt mai kuch bhi likho
+
