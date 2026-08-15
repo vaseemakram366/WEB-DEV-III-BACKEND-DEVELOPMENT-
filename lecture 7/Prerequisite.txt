@@ -1,0 +1,61 @@
+LECTURE 7 — PREREQUISITES
+
+1. Computer
+   │
+   ├── Operating System
+   │      └── Windows / Linux / macOS
+   │
+   ├── VS Code
+   │
+   ├── Node.js
+   │      └── npm
+   │
+   └── Git (optional, but GitHub ke liye required)
+
+
+2. Internet
+
+
+3. Run in terminal = node --version
+   Example = v24.16.0
+
+
+4. Run in terminal = npm --version
+   Example = 11.x.x
+
+
+5. For GitHub user = git --version
+   Example = git version 2.x.x
+
+
+6. Ek folder banao aur use VS Code mein open karo.
+
+
+7. Isi folder mein server.js file banao.
+
+
+8. Nodemon install karo:
+
+   npm install --save-dev nodemon
+
+
+9. Check Nodemon:
+
+   npx nodemon --version
+
+
+10. Server run karo:
+
+    npx nodemon server.js
+
+
+11. Browser mein open karo:
+
+    http://localhost:3000/
+
+
+12. Server stop karne ke liye:
+
+    Ctrl + C
+
+13. node server.js (to run the code)
