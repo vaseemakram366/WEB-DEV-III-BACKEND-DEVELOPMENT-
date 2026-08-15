@@ -1,0 +1,59 @@
+LECTURE 3 — PREREQUISITES
+
+1. Computer
+   │
+   ├── Operating System
+   │      └── Windows / Linux / macOS
+   │
+   ├── VS Code
+   │
+   ├── Node.js
+   │      └── npm
+   │
+   └── Git (optional, but GitHub ke liye required)
+
+
+2. Internet
+
+
+3. Run in terminal = node --version
+   Example = v24.16.0
+
+
+4. Run in terminal = npm --version
+   Example = 11.x.x
+
+
+5. For GitHub user = git --version
+   Example = git version 2.x.x
+
+
+6. Ek folder banao aur use VS Code mein open karo.
+
+
+7. Terminal mein run karo:
+
+   npm init -y
+
+
+8. Isi folder mein files banao:
+
+   ├── math.js
+   ├── script.js
+   └── package.json
+
+
+9. package.json mein add karo:
+
+   "type": "module"
+
+
+10. math.js aur script.js same folder mein rakho.
+
+
+11. Run in terminal:
+
+   node script.js
+
+
+12. Is project ke liye koi external npm package required nahi hai.
