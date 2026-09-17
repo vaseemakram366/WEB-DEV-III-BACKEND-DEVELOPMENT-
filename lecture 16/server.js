@@ -1,13 +1,16 @@
 const express = require("express")
+const morgan=require("morgan")
 const app = express();
 const PORT = 3000
 
-const logMiddleware=(req,res,next)=>{
-    req.data="this is from the middleware"
-    console.log("Request url:",req.url,"Method:",req.method,);
-    // res.send("mujhe nhi bhejna aage")
-    next();
-}
+app.use(morgan())
+
+// const logMiddleware=(req,res,next)=>{
+//     req.data="this is from the middleware"
+//     console.log("Request url:",req.url,"Method:",req.method,"Time:",new Data().toLocalString());
+//     // res.send("mujhe nhi bhejna aage")
+//     next();
+// }
 
 const apiMiddleware=(req,res,next)=>{
     const API_KEY=req.query.API_KEY;
@@ -19,7 +22,7 @@ const apiMiddleware=(req,res,next)=>{
     
 }
 
-app.use(logMiddleware);//global middleware
+// app.use(logMiddleware);//global middleware
 // app.use(apiMiddleware);//global middleware
 
 app.get("/",(req,res)=>{
