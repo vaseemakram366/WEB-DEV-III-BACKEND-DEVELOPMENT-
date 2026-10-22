@@ -80,6 +80,35 @@ use("GoogleDB")
 // delete operations 1. deleteOne() 2.deleteMany
 
 // db.employee.deleteOne({id: 101})
-db.employee.deleteMany(
-    
+// db.employee.deleteMany(
+
+// )
+
+// db.employee.find({
+//     age:{
+//         $gte:25
+//     }
+// })
+
+// db.employee.find(
+//     {
+//         department:{
+//             $eq:"IT"
+//         }
+//     }
+// )
+
+// // AND operator
+// db.employee.find(
+//     {department: "Finance",age:{$gte:25}}
+// )
+
+// OR operator
+db.employee.find(
+    {
+        $or:[
+            {department:"Finance"},
+            {age:{$gt:25}}
+        ]
+    }
 )
