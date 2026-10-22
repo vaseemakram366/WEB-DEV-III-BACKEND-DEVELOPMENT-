@@ -5,8 +5,8 @@ const crypto = require("crypto")
 const dns = require("dns")
 const process = require("process")
 
-console.log(os.platform());
-console.log(os.arch());
+// console.log(os.platform());
+// console.log(os.arch());
 // console.log(os.cpus().length);
 // console.log(os.homedir());
 // console.log(os.totalmem()/(1024*1024*1024) + " GB");
@@ -27,10 +27,10 @@ console.log(os.arch());
 // console.log(path.dirname(file));
 
 
-// console.log("Deepesh");
-// const data = fs.readFileSync("file.txt","utf-8"); // Synchronous
-// console.log(data);
-// console.log("Yuvraj");
+console.log("Deepesh");
+const data = fs.readFileSync("file.txt","utf-8"); // Synchronous
+console.log(data);
+console.log("Yuvraj");
 
 // console.log("Aashish");
 // fs.readFile("file.txt","utf-8",(err,data)=>{ // Asynchronous
