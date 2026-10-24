@@ -104,11 +104,17 @@ use("GoogleDB")
 // )
 
 // OR operator
-db.employee.find(
-    {
-        $or:[
-            {department:"Finance"},
-            {age:{$gt:25}}
-        ]
-    }
-)
+// db.employee.find(
+//     {
+//         $or:[
+//             {department:"Finance"},
+//             {age:{$gt:25}}
+//         ]
+//     }
+// )
+
+
+// db.employee.find({department:"Finance"},{Name:1,department:1,salary:1,_id:0})
+
+// db.employee.find().skip(2).limit(2)
+// db.employee.find().sort({empId:-1})
