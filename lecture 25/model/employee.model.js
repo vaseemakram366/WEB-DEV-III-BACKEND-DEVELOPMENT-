@@ -9,7 +9,6 @@ const employeeSchema = new Schema({
     Name: {
         type: String,
         required: true
-
     },
     salary: {
         type: Number,
@@ -30,8 +29,7 @@ const employeeSchema = new Schema({
     location:{
         type: String,
         required: true
-        
     }
-})
+},{timestamps: true});
 
-module.exports=mongoose.model("employee", employeeSchema);
+module.exports=mongoose.model("employees", employeeSchema);
