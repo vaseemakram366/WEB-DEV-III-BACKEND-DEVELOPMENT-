@@ -11,11 +11,33 @@
     <input type="text" id="message" placeholder="Enter you message">
     <input type="button" id="btn" value="send" onclick="sendMessage()">
     <ul id="ChatContainer"></ul>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
 
     <script>
         const msg=document.getElementById("message")
         const btn=document.getElementById("btn")
         const Chatbox=document.getElementById("chatContainer")
+
+        const socket=io("ws://localhost:3000")
+
+        socket.on("connect",()=>{
+            console.log("socket connected",socket.id);
+            
+        })
+
+        socket.on("message",(msg)=>{
+            console.log("message",msg);
+            
+            const li=document.createElement("li")
+            li.innerText=msg
+            Chatbox.appendChild(li)
+        })
+
+        const sendMessage=()=>{
+            console.log(msg.value);
+            
+            socket.emit("message",msg.value)
+        }
     </script>
 
 </body>

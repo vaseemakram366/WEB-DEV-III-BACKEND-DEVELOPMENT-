@@ -9,7 +9,7 @@ const server=http.createServer(app)
 
 const io=new WebSocket.Server(server,{
     cors:{
-        origin:"",
+        origin:"*",
         methods:["GET","POST"]
     }
 })
@@ -18,7 +18,10 @@ io.on("connection",(Socket)=>{
     console.log("socket Connected:",Socket.id);
 
     Socket.on("message",(msg)=>{
-        Socket.emit(msg)
+        // Socket.emit("message",msg) // sent to the same user
+        // io.emit("message",msg) // sent to the all user
+        Socket.broadcast.emit("message",msg)
+        // io.to("eaNUZfVDVXx_BAl4AAAA").emit("message",msg) // sent to a particular user with their id
     })
     
     Socket.on("disconnect",()=>{
